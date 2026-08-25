@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AuraTV — Politique de confidentialité</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5a5a5a;
+    --card: #f5f5f7;
+    --border: #e2e2e5;
+    --accent: #6f4fe0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f0f13;
+      --fg: #f2f2f4;
+      --muted: #a8a8b3;
+      --card: #1a1a20;
+      --border: #2a2a32;
+      --accent: #a78bfa;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px 64px;
+  }
+  h1 {
+    font-size: 1.75rem;
+    margin: 0 0 4px;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin: 32px 0 8px;
+    color: var(--fg);
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0 0 28px;
+  }
+  p, li {
+    margin: 0 0 12px;
+  }
+  ul {
+    padding-left: 20px;
+    margin: 0 0 16px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 16px 0;
+  }
+  code {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 0.9em;
+  }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 40px;
+    color: var(--muted);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+  }
+  nav {
+    margin-bottom: 24px;
+  }
+  nav a {
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="./index.html">&larr; AuraTV</a></nav>
+
+  <h1>Politique de confidentialité</h1>
+  <p class="updated">Dernière mise à jour : 14 août 2026</p>
+
+  <p>
+    AuraTV est développée par un développeur indépendant, pas par une société
+    collectant des données à des fins commerciales. Cette page explique très
+    concrètement ce que l'application fait de vos données, sans jargon.
+  </p>
+
+  <h2>Ce que nous ne faisons pas</h2>
+  <div class="card">
+    <ul>
+      <li>Pas de compte à créer, pas de profil, pas d'identifiant publicitaire.</li>
+      <li>Pas de SDK publicitaire ni de SDK d'analyse/traçage (analytics) intégré
+        à l'application.</li>
+      <li>Aucun suivi (« tracking ») entre applications ou sites, au sens de
+        l'App Tracking Transparency d'Apple.</li>
+      <li>Aucune revente ni partage de vos données avec des tiers à des fins
+        commerciales.</li>
+      <li>Aucun serveur central de notre part ne conserve vos identifiants
+        IPTV, votre historique de visionnage ou vos favoris.</li>
+    </ul>
+  </div>
+
+  <h2>Ce qui reste uniquement sur votre appareil</h2>
+  <p>
+    Vos favoris, votre progression de lecture (« où j'en étais »), votre
+    historique de chaînes, vos réglages, vos recherches enregistrées et le
+    cache du catalogue de votre fournisseur IPTV sont enregistrés en local,
+    dans l'espace de stockage de l'application sur votre iPhone, iPad ou Apple
+    TV. Rien de tout cela n'est envoyé vers un serveur nous appartenant.
+  </p>
+
+  <h2>Ce qui est mis en miroir sur votre iCloud</h2>
+  <p>
+    Pour retrouver vos favoris et votre progression sur vos autres appareils,
+    AuraTV utilise le magasin de valeurs-clés iCloud
+    (<code>NSUbiquitousKeyValueStore</code>), c'est-à-dire <strong>votre</strong>
+    compte iCloud personnel, pas un service que nous exploitons. Sont
+    concernés&nbsp;: favoris, progression de lecture, résultat du nettoyage de
+    catalogue, recherches enregistrées et les caches des réponses IA (pour
+    éviter de refaire les mêmes appels). Si vous n'êtes pas connecté à iCloud,
+    ou que la synchronisation est désactivée, tout reste local sans que rien
+    ne change au fonctionnement de l'application.
+  </p>
+
+  <h2>Vos identifiants IPTV</h2>
+  <p>
+    Le mot de passe de votre fournisseur IPTV est stocké exclusivement dans le
+    Trousseau (Keychain) sécurisé d'Apple, jamais dans les préférences de
+    l'application ni dans un fichier en clair. Il n'est jamais transmis à un
+    serveur nous appartenant : l'application s'en sert uniquement pour se
+    connecter directement au serveur de votre fournisseur.
+  </p>
+
+  <h2>Ce qui est envoyé à Anthropic (fonctionnalités IA)</h2>
+  <p>
+    Les fonctionnalités facultatives d'AuraTV+ (recherche en langage naturel,
+    briefing du soir, fiches enrichies, nettoyage de catalogue, reprise «&nbsp;où
+    j'en étais&nbsp;», compagnon sport) fonctionnent en interrogeant les modèles
+    Claude d'Anthropic. Ce qui est envoyé se limite à ce qui est nécessaire à
+    la demande&nbsp;: titres, genres et métadonnées de votre catalogue, ou le
+    texte de votre recherche. Aucun identifiant personnel (nom, e-mail,
+    identifiant Apple, identifiants IPTV) n'est inclus dans ces requêtes.
+  </p>
+  <p>
+    Selon la version de l'application, ces requêtes partent soit directement
+    vers l'API d'Anthropic avec une clé que vous avez vous-même renseignée
+    (usage de développement/test), soit — dans la version publique — via un
+    relais (« proxy ») que nous exploitons sur Cloudflare Workers. Ce relais
+    transmet la requête à Anthropic avec notre clé ; il ne journalise ni votre
+    clé ni le contenu complet des échanges.
+  </p>
+  <p>
+    Trois de ces fonctionnalités (recherche en langage naturel, briefing du
+    soir, fiches enrichies) restent utilisables sans abonnement, dans une
+    limite mensuelle. Pour compter cette limite sans vous demander de compte,
+    l'application envoie au relais un <strong>identifiant d'appareil
+    anonyme</strong>&nbsp;: un numéro tiré au hasard au premier lancement,
+    conservé dans le trousseau de votre appareil. Il ne contient rien sur vous
+    ni sur votre matériel, il n'est jamais associé à votre identifiant Apple,
+    et le relais n'en conserve qu'une empreinte chiffrée, jamais le numéro
+    lui-même. Si vous êtes abonné, c'est un justificatif signé par Apple qui
+    est envoyé à la place, et aucun identifiant d'appareil ne l'accompagne.
+  </p>
+
+  <h2>Effacer vos données</h2>
+  <p>
+    Dans l'application&nbsp;: <strong>Réglages → Stockage → « Effacer toutes
+    les données »</strong>. Cette action supprime immédiatement, sur
+    l'appareil, vos favoris, vos recherches enregistrées, votre progression de
+    lecture, votre historique de chaînes, les caches IA, le catalogue mis en
+    cache, vos sources IPTV enregistrées <em>et</em> les mots de passe
+    correspondants dans le Trousseau. Si la synchronisation iCloud est active,
+    la suppression se propage à vos autres appareils au prochain
+    rafraîchissement. Vous pouvez aussi désinstaller l'application, ce qui a
+    le même effet sur les données locales.
+  </p>
+
+  <h2>Abonnement et paiement</h2>
+  <p>
+    L'abonnement AuraTV+ est vendu et facturé exclusivement par Apple via
+    votre compte App Store. Nous ne recevons et ne stockons jamais vos
+    coordonnées bancaires. Apple nous transmet uniquement de quoi vérifier
+    qu'un abonnement est actif (via un justificatif de transaction StoreKit
+    signé), pour débloquer les fonctionnalités IA correspondantes.
+  </p>
+
+  <h2>Le contenu que vous regardez</h2>
+  <p>
+    AuraTV ne fournit aucun contenu. L'application se contente de lire les
+    flux du fournisseur IPTV que vous configurez vous-même, sous votre seule
+    responsabilité. Voir les
+    <a href="./cgu.html">conditions d'utilisation</a>.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Pour toute question sur cette politique ou sur vos données&nbsp;:
+    <a href="mailto:hac.remini@gmail.com">hac.remini@gmail.com</a>.
+  </p>
+
+  <footer>
+    <a href="./index.html">&larr; Retour à l'accueil</a>
+  </footer>
+</main>
+</body>
+</html>
