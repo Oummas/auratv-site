@@ -93,7 +93,7 @@
   <nav><a href="./index.html">&larr; AuraTV</a></nav>
 
   <h1>Politique de confidentialité</h1>
-  <p class="updated">Dernière mise à jour : 14 août 2026</p>
+  <p class="updated">Dernière mise à jour : 16 octobre 2026</p>
 
   <p>
     AuraTV est développée par un développeur indépendant, pas par une société
@@ -149,13 +149,14 @@
 
   <h2>Ce qui est envoyé à Anthropic (fonctionnalités IA)</h2>
   <p>
-    Les fonctionnalités facultatives d'AuraTV+ (recherche en langage naturel,
-    briefing du soir, fiches enrichies, nettoyage de catalogue, reprise «&nbsp;où
-    j'en étais&nbsp;», compagnon sport) fonctionnent en interrogeant les modèles
-    Claude d'Anthropic. Ce qui est envoyé se limite à ce qui est nécessaire à
-    la demande&nbsp;: titres, genres et métadonnées de votre catalogue, ou le
-    texte de votre recherche. Aucun identifiant personnel (nom, e-mail,
-    identifiant Apple, identifiants IPTV) n'est inclus dans ces requêtes.
+    Les fonctionnalités d'intelligence artificielle (recherche en langage
+    naturel, briefing du soir, fiches enrichies, nettoyage de catalogue, reprise
+    «&nbsp;où j'en étais&nbsp;», compagnon sport, questionnaire de goûts, tri
+    «&nbsp;Pour vous&nbsp;») fonctionnent en interrogeant les modèles Claude
+    d'Anthropic. Ce qui est envoyé se limite à ce qui est nécessaire à la
+    demande&nbsp;: titres, genres et métadonnées de votre catalogue, ou le texte
+    de votre recherche. Aucun identifiant personnel (nom, e-mail, identifiant
+    Apple, identifiants IPTV) n'est inclus dans ces requêtes.
   </p>
   <p>
     Selon la version de l'application, ces requêtes partent soit directement
@@ -168,7 +169,7 @@
   <p>
     Trois de ces fonctionnalités (recherche en langage naturel, briefing du
     soir, fiches enrichies) restent utilisables sans abonnement, dans une
-    limite mensuelle. Pour compter cette limite sans vous demander de compte,
+    limite d'essai. Pour compter cette limite sans vous demander de compte,
     l'application envoie au relais un <strong>identifiant d'appareil
     anonyme</strong>&nbsp;: un numéro tiré au hasard au premier lancement,
     conservé dans le trousseau de votre appareil. Il ne contient rien sur vous
@@ -176,6 +177,45 @@
     et le relais n'en conserve qu'une empreinte chiffrée, jamais le numéro
     lui-même. Si vous êtes abonné, c'est un justificatif signé par Apple qui
     est envoyé à la place, et aucun identifiant d'appareil ne l'accompagne.
+  </p>
+
+  <h2>Ce que le relais conserve</h2>
+  <p>
+    Pour appliquer les limites d'usage et suivre ce que coûtent les
+    fonctionnalités IA, le relais tient un <strong>compteur de
+    consommation</strong>. Ce compteur ne contient jamais le contenu d'un
+    échange&nbsp;: ni le texte de vos recherches, ni les titres envoyés, ni les
+    réponses.
+  </p>
+  <ul>
+    <li><strong>Si vous êtes abonné</strong>, le compteur est rattaché à
+      l'identifiant de transaction que Apple attribue à votre abonnement (un
+      numéro qui ne contient ni votre nom, ni votre adresse e-mail, ni votre
+      identifiant Apple). Il enregistre, mois par mois&nbsp;: le nombre
+      d'appels par fonctionnalité et par jour, le coût estimé et le volume
+      traité, la date et l'heure du premier appel, si l'abonnement est en
+      période d'essai gratuit, et s'il s'agit d'un achat réel ou d'un achat de
+      test (environnement de test d'Apple, TestFlight). Aucun identifiant
+      d'appareil n'y figure.</li>
+    <li><strong>Sans abonnement</strong>, le compteur est rattaché à
+      l'empreinte chiffrée de l'identifiant d'appareil anonyme décrit
+      ci-dessus. Il enregistre, pour le mois, le nombre d'appels par
+      fonctionnalité, le coût estimé et le volume traité. Un total de
+      l'ensemble des utilisateurs sans abonnement, sans aucun identifiant, est
+      aussi tenu jour par jour.</li>
+  </ul>
+  <p>
+    Chaque compteur est effacé automatiquement 40 jours après sa dernière mise
+    à jour. Il ne sert qu'à appliquer les limites et à suivre le coût du
+    service&nbsp;; il n'est ni partagé, ni vendu, ni croisé avec d'autres
+    données.
+  </p>
+  <p>
+    Le relais tient enfin une statistique agrégée et anonyme des appels
+    (fonctionnalité, type d'accès — gratuit, essai, abonné ou test —,
+    plateforme et version de l'application, pays, modèle et coût estimé), sans
+    aucun identifiant d'appareil, de transaction ni contenu, conservée
+    3&nbsp;mois.
   </p>
 
   <h2>Effacer vos données</h2>
@@ -196,8 +236,9 @@
     L'abonnement AuraTV+ est vendu et facturé exclusivement par Apple via
     votre compte App Store. Nous ne recevons et ne stockons jamais vos
     coordonnées bancaires. Apple nous transmet uniquement de quoi vérifier
-    qu'un abonnement est actif (via un justificatif de transaction StoreKit
-    signé), pour débloquer les fonctionnalités IA correspondantes.
+    qu'un abonnement est actif, s'il est en période d'essai et s'il s'agit
+    d'un achat de test (via un justificatif de transaction StoreKit signé),
+    pour débloquer les fonctionnalités IA correspondantes.
   </p>
 
   <h2>Le contenu que vous regardez</h2>
