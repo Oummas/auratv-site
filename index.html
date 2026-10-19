@@ -1,121 +1,21 @@
 <!doctype html>
-<html lang="fr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AuraTV</title>
-<style>
-  :root {
-    color-scheme: light dark;
-    --bg: #ffffff;
-    --fg: #1a1a1a;
-    --muted: #5a5a5a;
-    --card: #f5f5f7;
-    --border: #e2e2e5;
-    --accent: #6f4fe0;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0f0f13;
-      --fg: #f2f2f4;
-      --muted: #a8a8b3;
-      --card: #1a1a20;
-      --border: #2a2a32;
-      --accent: #a78bfa;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--fg);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-  }
-  main {
-    max-width: 640px;
-    margin: 0 auto;
-    padding: 48px 20px 64px;
-  }
-  h1 {
-    font-size: 2rem;
-    margin: 0 0 4px;
-  }
-  .tagline {
-    color: var(--muted);
-    margin: 0 0 32px;
-    font-size: 1.05rem;
-  }
-  p {
-    margin: 0 0 16px;
-  }
-  .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 20px 24px;
-    margin: 28px 0;
-  }
-  .links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin: 24px 0;
-  }
-  .links a {
-    display: inline-block;
-    padding: 10px 18px;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    color: var(--fg);
-    text-decoration: none;
-    background: var(--card);
-  }
-  .links a:hover {
-    border-color: var(--accent);
-  }
-  footer {
-    margin-top: 40px;
-    color: var(--muted);
-    font-size: 0.9rem;
-    border-top: 1px solid var(--border);
-    padding-top: 20px;
-  }
-  a { color: var(--accent); }
-</style>
-</head>
-<body>
-<main>
-  <h1>AuraTV</h1>
-  <p class="tagline">Un lecteur IPTV pour iPhone, iPad et Apple TV.</p>
-
-  <p>
-    AuraTV est une application qui lit les flux de <strong>votre propre
-    fournisseur IPTV</strong> (identifiants Xtream Codes ou playlist M3U) dans
-    une interface unique, avec recherche, favoris, reprise de lecture et
-    quelques fonctionnalités d'aide basées sur l'IA (recherche en langage
-    naturel, fiches enrichies, briefing du soir, nettoyage de catalogue).
-    AuraTV ne fournit et ne vend aucun contenu ni aucun abonnement IPTV.
-  </p>
-
-  <div class="card">
-    <p style="margin:0;">
-      L'abonnement optionnel <strong>AuraTV+</strong> (2,99&nbsp;€/mois ou
-      19,99&nbsp;€/an, 7&nbsp;jours d'essai) ne débloque que les
-      fonctionnalités IA de l'application. Il n'a aucun lien avec l'accès aux
-      chaînes ou films : ceux-ci dépendent uniquement de votre fournisseur
-      IPTV.
-    </p>
-  </div>
-
-  <div class="links">
-    <a href="./confidentialite.html">Politique de confidentialité</a>
-    <a href="./cgu.html">Conditions d'utilisation</a>
-  </div>
-
-  <footer>
-    Contact&nbsp;: <a href="mailto:hac.remini@gmail.com">hac.remini@gmail.com</a>
-  </footer>
-</main>
-</body>
-</html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AuraTV : lecteur IPTV pour Apple TV et iPhone, sans pub</title>
+<meta name="description" content="AuraTV est un lecteur IPTV gratuit, sans publicité, sans traçage et sans compte, pour iPhone, iPad et Apple TV. Vous apportez votre source M3U ou Xtream.">
+<link rel="canonical" href="https://oummas.github.io/auratv-site/">
+<link rel="alternate" hreflang="fr" href="https://oummas.github.io/auratv-site/"><link rel="alternate" hreflang="en" href="https://oummas.github.io/auratv-site/en/"><link rel="alternate" hreflang="x-default" href="https://oummas.github.io/auratv-site/">
+<meta property="og:type" content="website"><meta property="og:title" content="AuraTV : lecteur IPTV pour Apple TV et iPhone, sans pub"><meta property="og:description" content="AuraTV est un lecteur IPTV gratuit, sans publicité, sans traçage et sans compte, pour iPhone, iPad et Apple TV. Vous apportez votre source M3U ou Xtream."><meta property="og:url" content="https://oummas.github.io/auratv-site/"><meta property="og:locale" content="fr_FR"><meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="top"><a class="brand" href="./">AuraTV</a>
+<nav aria-label="Navigation"><a href="./" aria-current="page">Accueil</a><a href="support.html">Support</a><a href="en/index.html" hreflang="en" lang="en">English</a></nav></header>
+<main id="main">
+<section class="hero"><div>
+<h1>Le lecteur IPTV pour Apple TV et iPhone, sans pub</h1>
+<p class="lead">AuraTV est un lecteur : vous apportez votre propre source M3U ou Xtream, et AuraTV n'en fournit aucune. L'application ne fournit aucun contenu.</p>
+<ul class="promises"><li>Gratuit.</li><li>Sans pub.</li><li>Sans traçage.</li><li>Sans compte.</li></ul>
+<a class="btn" href="https://apps.apple.com/app/id6801504178">Télécharger dans l'App Store</a>
+</div><img src="img/fr-02-recherche-ia.jpg" width="540" height="1173" alt="Recherche en langage naturel dans AuraTV, avec des titres de démonstration"></section>
+<h2>Ce que fait AuraTV</h2><div class="grid"><div class="card"><h3>Recherche en langage naturel</h3><p>Décrivez ce que vous avez envie de regarder, AuraTV+ vous propose des idées. Essai gratuit de 7 jours, puis 2,99 € par mois ou 19,99 € par an. Le reste de l'application reste gratuit.</p></div><div class="card"><h3>Multivue jusqu'à 9 écrans</h3><p>Affichez jusqu'à 9 flux en même temps, selon la puissance de votre appareil.</p></div><div class="card"><h3>Contrôle parental actif d'office</h3><p>Le contenu pour adultes de votre fournisseur est masqué dès l'installation. Un code à 4 chiffres permet de l'afficher.</p></div><div class="card"><h3>10 langues</h3><p>L'application est traduite en dix langues.</p></div><div class="card"><h3>iPhone, iPad et Apple TV</h3><p>Une seule application, pensée pour le doigt comme pour la télécommande.</p></div></div>
+</main><footer><a href="confidentialite.html" hreflang="fr">Politique de confidentialité</a><a href="cgu.html" hreflang="fr">Conditions d'utilisation</a><a href="mailto:hac.remini@gmail.com">hac.remini@gmail.com</a></footer></body></html>
