@@ -8,6 +8,8 @@ liens légaux ne résolvent pas.
 - `index.html` — page d'accueil
 - `cgu.html` — conditions générales d'utilisation (FR)
 - `confidentialite.html` — politique de confidentialité (FR)
+- `support.html` — FAQ et contact ; `en/index.html` et `en/support.html` en anglais
+- `style.css`, `img/` — feuille de style et captures de démonstration, tout est servi localement
 
 En ligne :
 
