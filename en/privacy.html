@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="alternate" hreflang="fr" href="https://oummas.github.io/auratv-site/confidentialite.html">
+<link rel="alternate" hreflang="en" href="https://oummas.github.io/auratv-site/en/privacy.html">
+<title>AuraTV — Privacy policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5a5a5a;
+    --card: #f5f5f7;
+    --border: #e2e2e5;
+    --accent: #6f4fe0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f0f13;
+      --fg: #f2f2f4;
+      --muted: #a8a8b3;
+      --card: #1a1a20;
+      --border: #2a2a32;
+      --accent: #a78bfa;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px 64px;
+  }
+  h1 {
+    font-size: 1.75rem;
+    margin: 0 0 4px;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin: 32px 0 8px;
+    color: var(--fg);
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0 0 28px;
+  }
+  p, li {
+    margin: 0 0 12px;
+  }
+  ul {
+    padding-left: 20px;
+    margin: 0 0 16px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 16px 0;
+  }
+  code {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 0.9em;
+  }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 40px;
+    color: var(--muted);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+  }
+  nav {
+    margin-bottom: 24px;
+  }
+  nav a {
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="./index.html">&larr; AuraTV</a> &middot; <a href="../confidentialite.html" hreflang="fr" lang="fr">Français</a></nav>
+
+  <h1>Privacy policy</h1>
+  <p class="updated">Last updated: October 19, 2026</p>
+
+  <p>
+    AuraTV is developed by an independent developer, not by a company
+    collecting data for commercial purposes. This page explains, in plain
+    terms, what the app does with your data.
+  </p>
+
+  <h2>What we do not do</h2>
+  <div class="card">
+    <ul>
+      <li>No account to create, no profile, no advertising identifier.</li>
+      <li>No advertising SDK and no analytics or tracking SDK built into the
+        app.</li>
+      <li>No tracking across apps or websites, within the meaning of Apple's
+        App Tracking Transparency.</li>
+      <li>No resale or sharing of your data with third parties for commercial
+        purposes.</li>
+      <li>No central server of ours stores your IPTV credentials, your viewing
+        history or your favorites.</li>
+    </ul>
+  </div>
+
+  <h2>What stays only on your device</h2>
+  <p>
+    Your favorites, your playback progress ("where I left off"), your channel
+    history, your settings, your saved searches and the cache of your IPTV
+    provider's catalog are stored locally, in the app's storage space on your
+    iPhone, iPad or Apple TV. None of this is sent to a server that we own.
+  </p>
+
+  <h2>What is mirrored to your iCloud</h2>
+  <p>
+    To bring your favorites and progress to your other devices, AuraTV uses
+    the iCloud key-value store (<code>NSUbiquitousKeyValueStore</code>), that
+    is, <strong>your</strong> personal iCloud account, not a service we
+    operate. This covers: favorites, playback progress, the result of the
+    catalog cleanup, saved searches and the caches of AI responses (to avoid
+    repeating the same calls). If you are not signed in to iCloud, or if
+    syncing is turned off, everything stays local and the app works the same
+    way.
+  </p>
+
+  <h2>Your IPTV credentials</h2>
+  <p>
+    The password for your IPTV provider is stored exclusively in Apple's
+    secure Keychain, never in the app's preferences or in a plain file. It is
+    never sent to a server that we own: the app only uses it to connect
+    directly to your provider's server.
+  </p>
+
+  <h2>Anonymous statistics</h2>
+  <p>
+    AuraTV sends two anonymous counts, once per device: "a source was added"
+    and "a first playback started". Each one contains only the event name, the
+    platform (iPhone, iPad, Apple TV or Mac) and the app version number. No
+    identifier, no stored IP address, no source name or address, and no viewing
+    history is transmitted or recorded; the country is derived from the
+    connection by our hosting provider when the request is received, and the IP
+    address is not kept. These counts are used only to learn how many
+    installations reach a first playback. You can turn them off at any time in
+    <strong>Settings › Privacy › Anonymous statistics</strong>; when off,
+    nothing is sent.
+  </p>
+
+  <h2>What is sent to Anthropic (AI features)</h2>
+  <p>
+    The artificial intelligence features (natural-language search, evening
+    briefing, enriched details, catalog cleanup, "where I left off" resume,
+    sports companion, taste questionnaire, "For you" ranking) work by querying
+    Anthropic's Claude models. What is sent is limited to what the request
+    needs: titles, genres and metadata from your catalog, or the text of your
+    search. No personal identifier (name, email, Apple ID, IPTV credentials)
+    is included in these requests.
+  </p>
+  <p>
+    Depending on the app version, these requests go either directly to
+    Anthropic's API with a key that you entered yourself (development/test
+    use), or, in the public version, through a relay ("proxy") that we operate
+    on Cloudflare Workers. The relay forwards the request to Anthropic with
+    our key; it does not log your key or the full content of the exchanges.
+  </p>
+  <p>
+    Three of these features (natural-language search, evening briefing,
+    enriched details) remain usable without a subscription, within a trial
+    limit. To count this limit without asking you for an account, the app
+    sends the relay an <strong>anonymous device identifier</strong>: a number
+    drawn at random on first launch and kept in your device's keychain. It
+    contains nothing about you or your hardware, it is never linked to your
+    Apple ID, and the relay keeps only an encrypted fingerprint of it, never
+    the number itself. If you are subscribed, a receipt signed by Apple is
+    sent instead, and no device identifier accompanies it.
+  </p>
+
+  <h2>What the relay keeps</h2>
+  <p>
+    To apply usage limits and track what the AI features cost, the relay keeps
+    a <strong>usage counter</strong>. This counter never contains the content
+    of an exchange: not the text of your searches, not the titles sent, not
+    the responses.
+  </p>
+  <ul>
+    <li><strong>If you are subscribed</strong>, the counter is attached to the
+      transaction identifier that Apple assigns to your subscription (a number
+      that contains neither your name, nor your email address, nor your Apple
+      ID). It records, month by month: the number of calls per feature and per
+      day, the estimated cost and the volume processed, the date and time of
+      the first call, whether the subscription is in a free trial period, and
+      whether it is a real purchase or a test purchase (Apple's test
+      environment, TestFlight). No device identifier appears in it.</li>
+    <li><strong>Without a subscription</strong>, the counter is attached to
+      the encrypted fingerprint of the anonymous device identifier described
+      above. It records, for the month, the number of calls per feature, the
+      estimated cost and the volume processed. A total across all
+      non-subscribed users, without any identifier, is also kept day by
+      day.</li>
+  </ul>
+  <p>
+    Each counter is deleted automatically 40 days after its last update. It is
+    used only to apply the limits and track the cost of the service; it is
+    neither shared, nor sold, nor cross-referenced with other data.
+  </p>
+  <p>
+    Finally, the relay keeps an aggregated, anonymous statistic of calls
+    (feature, access type: free, trial, subscriber or test; platform and app
+    version, country, model and estimated cost), without any device or
+    transaction identifier or content, kept for 3&nbsp;months.
+  </p>
+
+  <h2>Erasing your data</h2>
+  <p>
+    In the app: <strong>Settings → Storage → "Erase all data"</strong>. This
+    action immediately deletes, on the device, your favorites, your saved
+    searches, your playback progress, your channel history, the AI caches, the
+    cached catalog, your saved IPTV sources <em>and</em> the matching
+    passwords in the Keychain. If iCloud sync is on, the deletion propagates
+    to your other devices at the next refresh. You can also uninstall the app,
+    which has the same effect on local data.
+  </p>
+
+  <h2>Subscription and payment</h2>
+  <p>
+    The AuraTV+ subscription is sold and billed exclusively by Apple through
+    your App Store account. We never receive or store your payment details.
+    Apple only passes us what is needed to verify that a subscription is
+    active, whether it is in a trial period and whether it is a test purchase
+    (through a signed StoreKit transaction receipt), in order to unlock the
+    matching AI features.
+  </p>
+
+  <h2>The content you watch</h2>
+  <p>
+    AuraTV provides no content. The app simply plays the streams of the IPTV
+    provider that you configure yourself, under your sole responsibility. See
+    the <a href="../cgu.html" hreflang="fr">terms of use</a> (in French).
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    For any question about this policy or your data:
+    <a href="mailto:hac.remini@gmail.com">hac.remini@gmail.com</a>.
+  </p>
+
+  <footer>
+    <a href="./index.html">&larr; Back to home</a>
+  </footer>
+</main>
+</body>
+</html>
